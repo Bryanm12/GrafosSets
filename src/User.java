@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 import java.util.List;
 public class User {
-    String name;
-    int age;
-    List<String> interests;
+    public String name;
+    public int age;
+    public List<String> interests;
 
     public User(String name, int age, List<String> interests){
         this.name = name;

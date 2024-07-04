@@ -1,9 +1,6 @@
-import java.util.List;
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.*;
 public class Graph<T> {
-    private Map<NodeGraph<T>, List<NodeGraph<T>>> nodes;
+    public Map<NodeGraph<T>, List<NodeGraph<T>>> nodes;
 
     public Graph(){
         this.nodes= new HashMap<>();
@@ -16,6 +13,8 @@ public class Graph<T> {
         nodes.get(node1).add(node2);
         nodes.get(node2).add(node1);
     }
+
+    
     public List<NodeGraph<T>> getFriends(NodeGraph<T> node){
         return nodes.get(node);
     }

@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 public class NodeGraph<T> {
     private T user;
-    private List<T> friends;
+    public List<T> friends;
 
     public NodeGraph(T user){
     this.user=user;
