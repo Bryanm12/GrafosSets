@@ -8,7 +8,12 @@ public class User {
     public User(String name, int age, List<String> interests){
         this.name = name;
         this.age= age;
-        this.interests = new ArrayList<>();
+        this.interests = interests;
+    }
+    
+    @Override
+    public String toString() {
+        return "User [name=" + name + ", age=" + age + ", interests=" + interests + "]";
     }
 
     public String getName() {
